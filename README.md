@@ -6,8 +6,8 @@
 
 #### 二、申请免费ssl证书
 * curl https://get.acme.sh | sh -s email=root@admin.com
-* .acme.sh/acme.sh --issue -d domian.com --standalone -k ec-256
-* .acme.sh/acme.sh --installcert -d domian.com --fullchainpath /etc/xray/tls/domian.com.crt --keypath /etc/xray/tls/domian.com.key --ecc
+* acme.sh --issue -d domian.com --standalone -k ec-256
+* acme.sh --installcert -d domian.com --fullchainpath /etc/xray/tls/domian.com.crt --keypath /etc/xray/tls/domian.com.key --ecc
 * acme.sh --upgrade --auto-upgrade
 * chmod -R 755 /etc/xray/tls 
 
