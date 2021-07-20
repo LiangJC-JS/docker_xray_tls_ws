@@ -34,6 +34,6 @@
 * chown -R nginx:nginx /var/www/html
 
 #### 七、启动容器
-docker run -d --name xray --restart always -p 80:80 -p 443:443 -v /etc/xray:/etc/xray -v /etc/nginx:/etc/nginx -v /var/www/html:/usr/share/nginx/html/ xray:1.4.2
+* docker run -d --name xray --restart always -p 80:80 -p 443:443 -v /etc/xray:/etc/xray -v /etc/nginx:/etc/nginx -v /var/www/html:/usr/share/nginx/html/ xray:1.4.2
 
 enjoy！
