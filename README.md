@@ -2,7 +2,7 @@
 
 #### 一、安装
 * docker https://docs.docker.com/engine/install/ubuntu/
-* git clone https://github.com/LiangJC-JS/docker_xray_tls_ws.git
+* git clone https://github.com/LiangJC-JS/docker_xray_tls_ws.git 
 
 #### 二、申请免费ssl证书
 * curl https://get.acme.sh | sh -s email=root@admin.com
@@ -12,13 +12,13 @@
 * chmod -R 755 /etc/xray/tls 
 
 #### 三、构建docker镜像
-* cd docker_xray_tls_ws
+* cd ~/docker_xray_tls_ws/templet
 * unzip docker_xray_tls.zip
 * cd docker_xray_tls
 * docker build -t xray:1.4.2 .
 
 #### 四、配置相关文件
-* cd docker_xray_tls_ws
+* cd ~/docker_xray_tls_ws/templet
 * unzip xray_templet.zip -d /
 * unzip nginx_templet.zip -d /
 
